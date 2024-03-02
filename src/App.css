@@ -1,0 +1,130 @@
+.breadcrumb{
+  --bs-breadcrumb-divider: '>'
+}
+
+body{
+  /* background-color: #FAF9F6; */
+  background-color: #0A0A0A;
+}
+
+.form-control,
+.form-control:active,
+.form-control:hover,
+.form-control:focus{
+  background-color: transparent;
+  color: white;
+}
+
+.card{
+  background-color: #1c1c1c;
+  box-shadow: rgba(27, 28, 30, 0.2) 0px 8px 24px;
+}
+
+.text-editor{
+  min-height: 3rem;
+}
+
+
+.add_error{
+  color: rgba(255, 87, 51); 
+}
+
+.desc{
+  font-size: 15px;
+}
+
+/* Loader screen */
+.loaderScreen{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.load{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  z-index: 111;
+}
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(90deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #26323833;
+}
+@keyframes rotation {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg)}
+} 
+
+
+.Card-Link{
+  display: block;
+  text-decoration: none;
+  width: 25rem;
+}
+
+
+
+.Home-Card:hover{
+  animation: card-anim 500ms forwards;
+
+}
+
+@keyframes card-anim {
+  0%{
+    transform: scale(1.0);
+  }
+  50%{
+    transform: scale(1.04);
+  }
+  100%{
+    transform: scale(1.02);
+  }
+  
+}
+
+
+
+
+.error-text{
+  max-height: 300px;
+  font-weight: 900;
+  font-size: 20rem;
+  margin-bottom: 0;
+}
+
+.error-msg{
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.error-btn{
+  width: 150px;
+  font-size: 20px;
+}
